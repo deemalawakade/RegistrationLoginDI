@@ -1,0 +1,19 @@
+﻿@model LoginRegistrationUtilities.RegisterMM
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+@Html.BeginForm("Register", "Home", FormMethod.Post)
+
+{
+@Html.LabelFor(m => m.FirstName)
+@Html.TextBoxFor(m => m.FirstName)
+@Html.LabelFor(m => m.LastName)
+@Html.TextBoxFor(m => m.LastName)
+<input type="submit" value="Submit" />
+}
+
+
